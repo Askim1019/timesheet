@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Timesheet</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center">Employee Timesheet Management</h1>
+        </div>
+        <div class= "box1 row">
+            <div class= "col-sm-12"> 
+                <h3>Current Employees</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="text-center">Employee Name</th>
+                            <th class="text-center">Role</th>
+                            <th class="text-center">Start Date</th>
+                            <th class="text-center">Months Worked</th>                            
+                            <th class="text-center">Monthly Rate ($)</th>                            
+                            <th class="text-center">Total Billed ($)</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td class="text-center" id="nameData"></td>
+                            <td class="text-center" id="roleData"></td>
+                            <td class="text-center" id= "startDateData"></td>
+                            <td class="text-center" id= "monthsData"></td>
+                            <td class="text-center" id= "rateData"></td>
+                            <td class="text-center" id= "billedData"></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="panel-body">
+                <form role="form">
+                    <div class="form">
+                        <label for="search">Employee name</label>
+                        <input type="text" class="form-control" id="name">
+                        <label for="nrr">Role </label>  
+                        <input type="text" class="form-control" id="role">                   
+                        <label for="start-year">Start Date </label>
+                        <input type="text" class="form-control" id="start-date">
+                        <label for="end-year">Monthly Rate</label>
+                        <input type="text" class="form-control" id="monthly-rate">
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="add-data">
+                        Submit
+                    </button>
+                </form>
+            </div>
+    </div>
+   
+Add CommentCollapse 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="assets/javascript.js"></script>
+</body>
+</html>
+
+
